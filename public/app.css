@@ -1,0 +1,78 @@
+body{
+	text-align: center;
+}
+.my-bg{
+	background: #575757;
+}
+.my-body-bg{
+	background: #383b3d;
+}
+.card{
+	transition: transform 0.7s;
+}
+
+.card:hover{
+	transform: scale(1.05);
+}
+i{
+	color: #f3f3f3;
+}
+img{
+    -webkit-transition: opacity 0.7s ease-in-out;
+    -moz-transition: opacity 0.7s ease-in-out;
+    -o-transition: opacity 0.7s ease-in-out;
+    transition: opacity 0.7s ease-in-out;
+}
+
+img:hover{
+	opacity: 0.6;
+}
+
+#form{
+	width: 30%; 
+	margin: 0 auto;
+}
+
+#cards-container{
+	display: flex; 
+	flex-wrap: wrap;
+}
+
+.card{
+	width: 16rem; 
+	margin: 10px auto;
+}
+
+.half{
+	width: 60%;
+	float: left;
+	padding-left: 5%;
+	overflow: auto;
+	text-align: left;
+}
+
+.half-poster{
+	width: 40%;
+	float: left;
+	text-align: right;
+	overflow: hidden;
+}
+
+
+@media (orientation: portrait) {
+  body{
+  	font-size: 1.2em;
+  }
+
+  #form{
+	width: 70%; 
+  }
+
+  .card{
+  	margin: 5px auto;
+  }
+
+  .movie-detail{
+  	font-size: 2em;
+  }
+}
