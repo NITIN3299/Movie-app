@@ -29,6 +29,6 @@ app.get("/detail/:movieID",function(req, res){
 		}
 	})
 })
-app.listen(3000,function(){
+app.listen(process.env.port,function(){
     console.log("movie app is started!!");
 });
